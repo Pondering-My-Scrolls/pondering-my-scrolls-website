@@ -9,7 +9,7 @@ export const metadata = {
 function Privacy() {
     return (
         <main>
-            <PageHeader icon="" h1="Privacy Policy" description="" />
+            <PageHeader h1="Privacy Policy" />
         </main>
     )
 }

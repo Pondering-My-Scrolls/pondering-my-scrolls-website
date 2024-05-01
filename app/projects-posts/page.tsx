@@ -12,7 +12,7 @@ function Portfolio() {
 
   return (
       <main className="portfolio">
-          <PageHeader icon="" h1="Portfolio" description="" />
+          <PageHeader h1="Portfolio" />
           <section className="portfolio__posts">
               {postPreviews}
           </section>
