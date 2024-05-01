@@ -3,12 +3,16 @@ body {
 
     * {
         color: $black;
+        line-height: 1.5;
     }
 }
 
 .button {
+    display: inline-block;
     background: transparent;
     border: 1px solid $black;
     font-size: 1.1rem;
-    padding: 0.03rem 1.2rem;
+    padding: 0.45rem 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
 }

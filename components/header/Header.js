@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-import SiteNav from './SiteNav.js';
+import './header.scss';
 
 function Header() {
     const pathname = usePathname();
@@ -29,27 +29,46 @@ function Header() {
             </div>
 
             {/* Nav */}
-            <nav 
-                className="header__nav col-5-13 m-col-4-10 s-col-3-5" 
-                role="navigation"
-                aria-label="Site Navigation"
-            >
-                <Link href="/projects-posts" aria-current={pathname == "/projects-posts" ? "page" : "false"}>
-                    Projects & Posts
-                </Link>
-                <div className={`header__nav__modal ${!isOpen ? '' : 'open'}`}>
-                    <SiteNav />
-                </div>       
-            </nav>
-            <button 
-                id="siteNavToggle" 
-                aria-controls="siteNav" 
-                aria-expanded={`${!isOpen ? false : true}`}
-                aria-label="Toggle Navigation"
-                onClick={siteNavToggleClick}
-            >
-                More +
-            </button>
+            <div className="header__nav col-5-13 m-col-4-10 s-col-3-5">
+                <nav 
+                    role="navigation"
+                    aria-label="Site Navigation"
+                >
+                    <Link href="/projects-posts" aria-current={pathname == "/projects-posts" ? "page" : "false"}>
+                        Projects & Posts
+                    </Link>
+                    <div className={`header__nav__modal ${!isOpen ? '' : 'open'}`}>
+                        <ul id="siteNav" className="site-nav">
+                            <li>
+                                <Link href="/about" aria-current={pathname == "/about" ? "page" : "false"}>
+                                    About us
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/accessibility-privacy" aria-current={pathname == "/accessibility-privacy" ? "page" : "false"}>
+                                    Accessibility & Privacy
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/sitemap" aria-current={pathname == "/sitemap" ? "page" : "false"}>
+                                    Sitemap
+                                </Link>
+                            </li>
+                        </ul>
+                    </div>       
+                </nav>
+                <button 
+                    id="siteNavToggle" 
+                    aria-controls="siteNav" 
+                    aria-expanded={`${!isOpen ? false : true}`}
+                    aria-label="Toggle Navigation"
+                    onClick={siteNavToggleClick}
+                    className="button"
+                >
+                    More +
+                </button>
+            </div>
+
         </header>
         <div id="main-content"></div>
         </>

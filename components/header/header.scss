@@ -1,5 +1,14 @@
 @import "../../assets/styles/1-variables";
 
+.header__nav {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+}
+
 .header__nav__modal {
     display: none;
     position: absolute;
@@ -8,6 +17,8 @@
     font-size: 1.05rem;
     padding: 1.2rem 2.3rem;
     border-radius: 2rem;
+    top: 4rem;
+    right: 0;
 
     &.open {
         display: block;
