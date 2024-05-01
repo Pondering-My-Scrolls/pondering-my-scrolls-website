@@ -9,15 +9,21 @@ $margin-m: 40;
 $margin-s: 20;
 $column-gap: 50;
 
+/* ~~~~~~~~~~~~~~~~~~~~~ responsive values */
+$desktop: 87.5rem;
+$tablet: 56.25rem;
+$mobile: 37.5rem;
+
 /* ~~~~~~~~~~~~~~~~~~~~~ theme colors */
 $black: #292727;
 $cream: #F4F0E9;
 $not-black: #413D3A;
 
-/* ~~~~~~~~~~~~~~~~~~~~~ other */
-$easing: cubic-bezier(0.83, 0, 0.17, 1);
 
 /* ~~~~~~~~~~~~~~~~~~~~~ typography */
 $sans: "Space Grotesk", sans-serif;
 $mono: "Space Mono", monospace;
 $blackletter: "Pirata One", system-ui;
+
+/* ~~~~~~~~~~~~~~~~~~~~~ other */
+$easing: cubic-bezier(0.83, 0, 0.17, 1);
