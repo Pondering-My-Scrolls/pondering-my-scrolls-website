@@ -33,23 +33,23 @@ function Header() {
                 className="header__nav col-5-13 m-col-4-10 s-col-3-5" 
                 role="navigation"
                 aria-label="Site Navigation"
-                onClick={siteNavToggleClick}
             >
                 <Link href="/projects-posts" aria-current={pathname == "/projects-posts" ? "page" : "false"}>
                     Projects & Posts
                 </Link>
-                <button 
-                    id="siteNavToggle" 
-                    aria-controls="siteNav" 
-                    aria-expanded={`${!isOpen ? false : true}`}
-                    aria-label="Toggle Navigation"
-                >
-                    More +
-                </button>
                 <div className={`header__nav__modal ${!isOpen ? '' : 'open'}`}>
                     <SiteNav />
                 </div>       
             </nav>
+            <button 
+                id="siteNavToggle" 
+                aria-controls="siteNav" 
+                aria-expanded={`${!isOpen ? false : true}`}
+                aria-label="Toggle Navigation"
+                onClick={siteNavToggleClick}
+            >
+                More +
+            </button>
         </header>
         <div id="main-content"></div>
         </>

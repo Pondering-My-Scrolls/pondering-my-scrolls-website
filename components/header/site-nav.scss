@@ -1,0 +1,8 @@
+.header__nav__modal {
+    display: none;
+    position: absolute;
+
+    &.open {
+        display: block;
+    }
+}

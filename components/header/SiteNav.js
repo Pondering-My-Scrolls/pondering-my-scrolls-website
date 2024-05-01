@@ -4,6 +4,8 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+import './site-nav.scss';
+
 function SiteNav() {
     const pathname = usePathname();
 
