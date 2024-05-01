@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from "next/link";
 
-import PageHeader from '../../components/page-header/page-header.js';
+import PageHeader from '../../components/page-header/pageHeader.js';
 
 export const metadata = {
     title: 'About | Pondering My Scrolls',

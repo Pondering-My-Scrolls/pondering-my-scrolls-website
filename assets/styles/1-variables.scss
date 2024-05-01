@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Space+Grotesk:wght@300..700&family=Space+Mono&display=swap');
+
 /* ~~~~~~~~~~~~~~~~~~~~~ layout.scss */
 $column-count: 12; 
 $column-count-m: 9; 
@@ -13,3 +15,6 @@ $column-gap: 50;
 $easing: cubic-bezier(0.83, 0, 0.17, 1);
 
 /* ~~~~~~~~~~~~~~~~~~~~~ typography */
+$sans: "Space Grotesk", sans-serif;
+$mono: "Space Mono", monospace;
+$blackletter: "Pirata One", system-ui;

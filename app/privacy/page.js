@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PageHeader from '../../components/page-header/page-header.js';
+import PageHeader from '../../components/page-header/pageHeader.js';
 
 export const metadata = {
     title: 'Privacy | Pondering My Scrolls',

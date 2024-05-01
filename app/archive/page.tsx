@@ -1,7 +1,7 @@
 import React from 'react';
 
 import getPostMetadata from '../../components/getPostMetadata';
-import PageHeader from '../../components/page-header/page-header.js';
+import PageHeader from '../../components/page-header/pageHeader.js';
 import PostPreview from '../../components/post-preview/PostPreview.js';
 
 function Portfolio() {
