@@ -29,14 +29,25 @@ function Header() {
             </div>
 
             {/* Nav */}
-            <div className="header__nav col-5-13 m-col-4-10 s-col-3-5">
+            <div className="col-5-13 m-col-4-10 s-col-3-5">
                 <nav 
+                    className="header__nav"
                     role="navigation"
                     aria-label="Site Navigation"
                 >
                     <Link href="/projects-posts" aria-current={pathname == "/projects-posts" ? "page" : "false"}>
                         Projects & Posts
                     </Link>
+                    <button 
+                        id="siteNavToggle" 
+                        aria-controls="siteNav" 
+                        aria-expanded={`${!isOpen ? false : true}`}
+                        aria-label="Toggle Navigation"
+                        onClick={siteNavToggleClick}
+                        className="button"
+                    >
+                        More +
+                    </button>
                     <div className={`header__nav__modal ${!isOpen ? '' : 'open'}`}>
                         <ul id="siteNav" className="site-nav">
                             <li>
@@ -57,16 +68,6 @@ function Header() {
                         </ul>
                     </div>       
                 </nav>
-                <button 
-                    id="siteNavToggle" 
-                    aria-controls="siteNav" 
-                    aria-expanded={`${!isOpen ? false : true}`}
-                    aria-label="Toggle Navigation"
-                    onClick={siteNavToggleClick}
-                    className="button"
-                >
-                    More +
-                </button>
             </div>
 
         </header>
