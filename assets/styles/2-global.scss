@@ -12,6 +12,26 @@ body {
     }
 }
 
+.skip-link {
+    display: block;
+    position: absolute;
+    left: -$desktop;
+    top: -$desktop;
+    background-color: $black;
+    border: 2px solid $cream;
+    color: $cream;
+    font-size: 2rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2.1rem;
+    text-decoration: none;
+
+    &:focus {
+        left: 0;
+        top: 0;
+        outline: 1px solid $black;
+    }
+}
+
 .button {
     display: inline-block;
     background: transparent;
@@ -20,4 +40,10 @@ body {
     padding: 0.45rem 1.2rem;
     border-radius: 1rem;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $black;
+        color: $cream;
+    }
 }
