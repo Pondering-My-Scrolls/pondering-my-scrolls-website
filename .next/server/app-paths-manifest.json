@@ -1,3 +1,6 @@
 {
-  "/page": "app/page.js"
+  "/page": "app/page.js",
+  "/accessibility-privacy/page": "app/accessibility-privacy/page.js",
+  "/about/page": "app/about/page.js",
+  "/sitemap/page": "app/sitemap/page.js"
 }

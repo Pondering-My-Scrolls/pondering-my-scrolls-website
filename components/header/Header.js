@@ -2,10 +2,12 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 import SiteNav from './SiteNav.js';
 
 function Header() {
+    const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false); 
     const siteNavToggleClick = () => {
         setIsOpen(!isOpen);
@@ -33,15 +35,18 @@ function Header() {
                 aria-label="Site Navigation"
                 onClick={siteNavToggleClick}
             >
+                <Link href="/projects-posts" aria-current={pathname == "/projects-posts" ? "page" : "false"}>
+                    Projects & Posts
+                </Link>
                 <button 
                     id="siteNavToggle" 
                     aria-controls="siteNav" 
                     aria-expanded={`${!isOpen ? false : true}`}
                     aria-label="Toggle Navigation"
                 >
-                    Menu
+                    More +
                 </button>
-                <div className={`header__nav__wrap ${!isOpen ? '' : 'open'}`}>
+                <div className={`header__nav__modal ${!isOpen ? '' : 'open'}`}>
                     <SiteNav />
                 </div>       
             </nav>

@@ -11,7 +11,17 @@ function SiteNav() {
         <ul id="siteNav" className="site-nav">
             <li>
                 <Link href="/about" aria-current={pathname == "/about" ? "page" : "false"}>
-                    About
+                    About us
+                </Link>
+            </li>
+            <li>
+                <Link href="/accessibility-privacy" aria-current={pathname == "/accessibility-privacy" ? "page" : "false"}>
+                    Accessibility & Privacy
+                </Link>
+            </li>
+            <li>
+                <Link href="/sitemap" aria-current={pathname == "/sitemap" ? "page" : "false"}>
+                    Sitemap
                 </Link>
             </li>
         </ul>
