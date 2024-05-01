@@ -34,45 +34,43 @@ img[class*="col-"] {
     place-self: start;
 }
 
-@media only screen and (min-width: 1200px) {
-    .wo,
-    .wo-full {
-        display: grid;
-        grid-template-columns: repeat($column-count, 1fr);
-        gap: 0 $column-gap + px;
-        justify-items: stretch;
-        align-items: start;
-    }
+.wo,
+.wo-full {
+    display: grid;
+    grid-template-columns: repeat($column-count-s, 1fr);
+    gap: 0 $column-gap + px;
+    justify-items: stretch;
+    align-items: start;
+}
 
-    .l-hide {
-        display: none !important;
-    }
+.s-hide {
+    display: none !important;
+}
 
-    .wo,
-    .wo-stacked {
-        margin: 0 $margin + px;
-    }
+.wo,
+.wo-stacked {
+    margin: 0 $margin-s + px;
+}
 
-    .wo-full {
-        padding: 0 $margin + px;
-    }
+.wo-full {
+    padding: 0 $margin-s + px;
+}
 
-    .wo > * {
-        grid-column-start: 1;
-        grid-column-end: $column-count + 1;
-    }
+.wo > * {
+    grid-column-start: 1;
+    grid-column-end: $column-count-s + 1;
+}
 
-    @for $a from 1 through $column-count {
-        @for $b from 1 through $column-count + 1 {
-            .col-#{$a}-#{$b} {
-                grid-column-start: $a;
-                grid-column-end: $b;
-            }
+@for $a-s from 1 through $column-count-s {
+    @for $b-s from 1 through $column-count-s + 1 {
+        .s-col-#{$a-s}-#{$b-s} {
+            grid-column-start: $a-s;
+            grid-column-end: $b-s;
         }
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
+@media only screen and (min-width: $mobile) and (max-width: $desktop) {
     .wo,
     .wo-full {
         display: grid;
@@ -110,39 +108,39 @@ img[class*="col-"] {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: $desktop) {
     .wo,
     .wo-full {
         display: grid;
-        grid-template-columns: repeat($column-count-s, 1fr);
+        grid-template-columns: repeat($column-count, 1fr);
         gap: 0 $column-gap + px;
         justify-items: stretch;
         align-items: start;
     }
 
-    .s-hide {
+    .l-hide {
         display: none !important;
     }
 
     .wo,
     .wo-stacked {
-        margin: 0 $margin-s + px;
+        margin: 0 $margin + px;
     }
 
     .wo-full {
-        padding: 0 $margin-s + px;
+        padding: 0 $margin + px;
     }
 
     .wo > * {
         grid-column-start: 1;
-        grid-column-end: $column-count-s + 1;
+        grid-column-end: $column-count + 1;
     }
 
-    @for $a-s from 1 through $column-count-s {
-        @for $b-s from 1 through $column-count-s + 1 {
-            .s-col-#{$a-s}-#{$b-s} {
-                grid-column-start: $a-s;
-                grid-column-end: $b-s;
+    @for $a from 1 through $column-count {
+        @for $b from 1 through $column-count + 1 {
+            .col-#{$a}-#{$b} {
+                grid-column-start: $a;
+                grid-column-end: $b;
             }
         }
     }
