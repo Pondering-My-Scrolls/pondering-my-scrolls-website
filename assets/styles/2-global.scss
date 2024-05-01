@@ -1,9 +1,14 @@
+html {
+    font-size: 1rem;
+}
+
 body {
     background-color: $cream;
 
     * {
         color: $black;
         line-height: 1.5;
+        font-size: 1rem;
     }
 }
 
