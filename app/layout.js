@@ -1,6 +1,5 @@
 "use client";
 
-import 'normalize.css/normalize.css';
 import '../assets/styles/main.scss';
 
 import React from 'react';
