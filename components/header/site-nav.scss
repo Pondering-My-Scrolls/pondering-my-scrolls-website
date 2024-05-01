@@ -1,8 +1,35 @@
+@import "../../assets/styles/1-variables";
+
 .header__nav__modal {
     display: none;
     position: absolute;
+    z-index: 3;
+    background-color: $black;
+    font-size: 1.05rem;
+    padding: 1.2rem 2.3rem;
+    border-radius: 2rem;
 
     &.open {
         display: block;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+        margin: 1.1rem 0;
+    }
+
+    a {
+        color: $cream;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            text-decoration: underline;
+        }
     }
 }
