@@ -1,10 +1,10 @@
 .footer {
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin: 1rem 0;
+    padding: 2rem 0;
 }
 
 .footer__container {
-    // if we ever want to have more than one item in the footer, we'ree prepared
+    // if we ever want to have more than one item in the footer, we're prepared
     display: flex;
     justify-content: space-between;
 }
