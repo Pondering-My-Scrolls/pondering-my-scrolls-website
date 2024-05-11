@@ -6,8 +6,7 @@ import './post-preview.scss';
 
 
 function postPreview(props) {
-  const truncate = (input) =>
-    input?.length > 35 ? `${input.substring(0, 35)}...` : input;
+  const truncate = (input) => input?.length > 35 ? `${input.substring(0, 35)}...` : input;
 
   return (
     <article className="post-preview">
