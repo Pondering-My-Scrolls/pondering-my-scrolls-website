@@ -1,12 +1,12 @@
 export default {
-  titleTemplate: '%s | Nicky Wolfe',
-  defaultTitle: 'Nicky Wolfe',
-  description: 'Frontend developer with a background in design, focused on accessibility and efficiency',
-  themeColor: '#011310',
+  titleTemplate: '%s | Pondering My Scrolls',
+  defaultTitle: 'Pondering My Scrolls',
+  description: '',
+  themeColor: '#413D3A',
   openGraph: {
     type: 'website',
     locale: 'en',
-    url: 'https://nicky.dev/',
-    siteName: 'Nicky Wolfe',
+    url: 'https://ponderingmyscrolls.com',
+    siteName: 'Pondering My Scrolls',
   },
 };
