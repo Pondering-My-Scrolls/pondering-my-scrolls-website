@@ -1,5 +1,7 @@
 import React from 'react';
 
+import LatestPost from "../components/latest-post/latestPost.js";
+
 export const metadata = {
     title: 'Home | Pondering My Scrolls',
     description: '',
@@ -12,6 +14,7 @@ function Home() {
                 <h1 className="h1--large">
                     Welcome, come ponder scrolls with us :)
                 </h1>
+                <LatestPost />
             </section>
         </main>
     )
