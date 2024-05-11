@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from "next/link";
+import Date from '../../components/postPreviewDate';
 
 import './post-preview.scss';
 
@@ -17,7 +18,7 @@ function postPreview(props) {
           </Link>
         </h2>
         <p>
-          {props.date}
+          <Date dateString={props.date} />
         </p>
         <p>
           {truncate(props.summary)}
