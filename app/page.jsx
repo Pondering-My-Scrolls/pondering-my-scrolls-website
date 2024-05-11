@@ -16,11 +16,11 @@ function Home() {
 
     return (
         <main id="mainContent" className="home">
-            <section className="wo pv center">
+            <section className="wo pv">
                 <h1 className="h1--large col-1-7">
                     Welcome, come ponder scrolls with us :)
                 </h1>
-                <div className="col-7-13">
+                <div className="col-8-13">
                     {latestPost.entries().next().value[1]}
                 </div>
             </section>
