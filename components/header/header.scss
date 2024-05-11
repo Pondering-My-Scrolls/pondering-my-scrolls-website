@@ -6,7 +6,7 @@
 
     &:after {
         content: '';
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid $not-black;
         width: calc(100% - #{$margin}px - #{$margin}px);
         position: absolute;
         bottom: 0;
