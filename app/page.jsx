@@ -7,7 +7,7 @@ export const metadata = {
 
 function Home() {
     return (
-        <main className="home wo">
+        <main id="mainContent" className="home wo">
             <section className="col-1-7 pv">
                 <h1 className="h1--large">
                     Welcome, come ponder scrolls with us :)
