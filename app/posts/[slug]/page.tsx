@@ -1,6 +1,4 @@
-"use client";
-
-import React, { useState } from 'react';
+import React from 'react';
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
@@ -23,12 +21,6 @@ export const generateStaticParams = async () => {
     }));
 };
 
-// for the summary button
-const [isOpen, setIsOpen] = useState(false);
-const postSummaryToggleClick = () => {
-    setIsOpen(!isOpen);
-};
-
 const Post = (props: any) => {
     const slug = props.params.slug;
     const post = getPostContent(slug);
@@ -41,19 +33,7 @@ const Post = (props: any) => {
                         {post.data.title}
                     </h1>
                     <p>
-                        <button
-                            id="postSummaryToggle"
-                            aria-controls="postSummary"
-                            aria-expanded={`${!isOpen ? false : true}`}
-                            aria-label="Toggle Summary"
-                            onClick={postSummaryToggleClick}
-                            className="button"
-                        >
-                            Summary: +
-                        </button>
-                        <div className={`post__header__modal ${!isOpen ? '' : 'open'}`}>
-                            <p>{post.data.summary}</p>
-                        </div>
+                        Summary: {post.data.summary}
                     </p>
                 </header>
 
