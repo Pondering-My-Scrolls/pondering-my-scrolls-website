@@ -28,11 +28,14 @@ const Post = (props: any) => {
     return (
         <main className="post pv">
             <article className="wo">
-                <div className="post__header col-3-10 m-col-1-10">
+                <header className="post__header col-3-10 m-col-1-10">
                     <h1 className="h2">
                         {post.data.title}
                     </h1>
-                </div>
+                    <p>
+                        Summary: {post.data.summary}
+                    </p>
+                </header>
 
                 <Markdown className="wysiwyg col-3-8 m-col-1-5">
                     {post.content}
