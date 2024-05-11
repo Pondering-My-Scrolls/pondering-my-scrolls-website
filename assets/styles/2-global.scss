@@ -47,3 +47,11 @@ body {
         color: $cream;
     }
 }
+
+.border--upper-line {
+    border-top: 1px solid $not-black;
+}
+
+.border--bottom-line {
+    border-bottom: 1px solid $not-black;
+}
