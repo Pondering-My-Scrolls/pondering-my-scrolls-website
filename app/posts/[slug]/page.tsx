@@ -32,9 +32,6 @@ const Post = (props: any) => {
                     <h1 className="h2">
                         {post.data.title}
                     </h1>
-                    <p>
-                        {post.data.date}
-                    </p>
                 </div>
 
                 <Markdown className="wysiwyg col-3-8 m-col-1-5">
@@ -42,6 +39,17 @@ const Post = (props: any) => {
                 </Markdown>
 
             </article>
+            <aside className="wo">
+                <div className="post__aside col-1-3  m-col-1-10">
+                    <p>
+                        Penned by <a rel="author" href="#">{post.data.author}</a>
+                    </p>
+                    <p>
+                        Categorized as “<a href="#">{post.data.category}</a>”
+                    </p>
+
+                </div>
+            </aside>
         </main>
     )
 }
