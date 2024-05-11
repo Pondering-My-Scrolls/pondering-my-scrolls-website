@@ -11,19 +11,17 @@ function postPreview(props) {
 
   return (
     <article className="post-preview">
-      <div className="post-preview__content">
-        <h2>
-          <Link href={`/posts/${props.slug}`}>
-            {props.title}
-          </Link>
-        </h2>
-        <p>
-          <Date dateString={props.date} />
-        </p>
-        <p>
-          {truncate(props.summary)}
-        </p>
-      </div>
+      <h2>
+        <Link href={`/posts/${props.slug}`}>
+          {props.title}
+        </Link>
+      </h2>
+      <p>
+        <Date dateString={props.date} />
+      </p>
+      <p>
+        {truncate(props.summary)}
+      </p>
     </article>
   )
 }
