@@ -4,6 +4,7 @@ date: '1645-01-23'
 fancydate: '23rd day of January, 1645'
 author: 'Me'
 category: 'utter-trash'
+summary: 'Lorem ipsum summary go burrrr'
 ---
 ##Lorem ipsum dolor
 

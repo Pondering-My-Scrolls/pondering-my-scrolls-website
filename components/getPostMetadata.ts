@@ -14,8 +14,10 @@ function getPostMetadata(): PostMetadata[] {
         return {
             title: matterResult.data.title,
             date: matterResult.data.date,
+            fancydate: matterResult.data.fancydate,
             author: matterResult.data.author,
             category: matterResult.data.category,
+            summary: matterResult.data.summary,
             slug: fileName.replace(".md", "")
         };
     });
