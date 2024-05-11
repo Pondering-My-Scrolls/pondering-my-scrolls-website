@@ -11,6 +11,9 @@
     &.between {
         align-content: space-around;
     }
+    &.center {
+        align-items: center;
+    }
     .left {
         justify-self: start;
     }
