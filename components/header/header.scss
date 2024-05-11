@@ -21,6 +21,10 @@
     align-items: center;
     gap: 4rem;
     width: 100%;
+
+    a {
+        font-weight: 500;
+    }
 }
 
 .header__nav__modal {
@@ -51,6 +55,7 @@
     a {
         color: $cream;
         text-decoration: none;
+        font-weight: 500;
 
         &:hover,
         &:focus {
