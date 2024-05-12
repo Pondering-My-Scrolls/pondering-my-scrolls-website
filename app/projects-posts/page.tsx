@@ -13,9 +13,9 @@ function Portfolio() {
   ));
 
   return (
-      <main className="portfolio wo">
-          <PageHeader h1="Portfolio" />
-          <section className="portfolio__posts">
+      <main className="posts wo">
+          <PageHeader h1="Projects & Posts" />
+          <section className="posts__wrapper">
               {postPreviews}
           </section>
       </main>

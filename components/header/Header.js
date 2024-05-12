@@ -75,8 +75,8 @@ function Header() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/accessibility-privacy" aria-current={pathname == "/accessibility-privacy" ? "page" : "false"}>
-                                    Accessibility & Privacy
+                                <Link href="/accessibility" aria-current={pathname == "/accessibility" ? "page" : "false"}>
+                                    Accessibility
                                 </Link>
                             </li>
                             <li>

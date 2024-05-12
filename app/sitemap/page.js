@@ -29,8 +29,8 @@ function Sitemap() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/accessibility-privacy">
-                            Accessibility & Privacy
+                        <Link href="/accessibility">
+                            Accessibility
                         </Link>
                     </li>
                     <li>
