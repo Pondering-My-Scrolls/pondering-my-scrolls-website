@@ -41,11 +41,14 @@ body {
     padding: 0.45rem 1.2rem;
     border-radius: 1rem;
     cursor: pointer;
+    transition: 0.2s all ease-in-out;
 
     &:hover,
     &:focus {
         background-color: $black;
         color: $cream;
+        outline: 2px solid $black;
+        outline-offset: 5px;        
     }
 }
 
