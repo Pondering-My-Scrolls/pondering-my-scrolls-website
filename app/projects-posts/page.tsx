@@ -4,6 +4,8 @@ import getPostMetadata from '../../components/getPostMetadata';
 import PageHeader from '../../components/page-header/pageHeader.js';
 import PostPreview from '../../components/post-preview/PostPreview.js';
 
+import './projects-posts.scss';
+
 function Portfolio() {
   const postMetadata = getPostMetadata();
   const postPreviews = postMetadata.map((post) => (
@@ -11,7 +13,7 @@ function Portfolio() {
   ));
 
   return (
-      <main className="portfolio">
+      <main className="portfolio wo">
           <PageHeader h1="Portfolio" />
           <section className="portfolio__posts">
               {postPreviews}

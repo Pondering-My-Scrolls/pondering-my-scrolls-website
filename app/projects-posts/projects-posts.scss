@@ -1,0 +1,8 @@
+@import '../../assets/styles/1-variables.scss';
+
+.portfolio__posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
