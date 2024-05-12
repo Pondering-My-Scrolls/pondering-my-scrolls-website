@@ -80,6 +80,11 @@ function Header() {
                                 </Link>
                             </li>
                             <li>
+                                <Link href="/privacy" aria-current={pathname == "/privacy" ? "page" : "false"}>
+                                    Privacy policy
+                                </Link>
+                            </li>
+                            <li>
                                 <Link href="/sitemap" aria-current={pathname == "/sitemap" ? "page" : "false"}>
                                     Sitemap
                                 </Link>
