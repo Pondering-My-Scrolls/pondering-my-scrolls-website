@@ -1,13 +1,13 @@
 import React from 'react';
 
+import './page-header.scss';
+
 function PageHeader(props) {
     return (
-        <section className="page-header wo">
-            <div className="col-3-10 m-col-3-8 s-col-1-5">
-                <h1 className="h1">
-                    {props.h1}
-                </h1>
-            </div>
+        <section className="page-header">
+            <h1 className="h1">
+                {props.h1}
+            </h1>
         </section>
     )
 }
