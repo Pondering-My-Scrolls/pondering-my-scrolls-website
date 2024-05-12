@@ -1,7 +1,7 @@
 import React from 'react';
 
-import getPostMetadata from '../../components/getPostMetadata';
 import PageHeader from '../../components/page-header/pageHeader.js';
+import getPostMetadata from '../../components/getPostMetadata';
 import PostPreview from '../../components/post-preview/PostPreview.js';
 
 import './projects-posts.scss';
