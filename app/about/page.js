@@ -13,7 +13,7 @@ function About() {
             <PageHeader h1="About" />
             <section className="page-content wo">
                 <div className="wysiwyg col-3-9 m-col-3-8 s-col-1-5">
-                 
+                    
                 </div>
             </section>
         </main>
