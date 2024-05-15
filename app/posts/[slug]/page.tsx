@@ -29,7 +29,7 @@ const Post = (props: any) => {
         <main className="post pv">
             <article className="wo">
                 <header className="post__header col-3-10 m-col-1-10">
-                    <h1 className="h2">
+                    <h1 className="h1">
                         {post.data.title}
                     </h1>
                     <p>
@@ -37,7 +37,7 @@ const Post = (props: any) => {
                     </p>
                 </header>
 
-                <Markdown className="wysiwyg col-3-8 m-col-1-5">
+                <Markdown className="wysiwyg col-3-10 m-col-2-9">
                     {post.content}
                 </Markdown>
 
