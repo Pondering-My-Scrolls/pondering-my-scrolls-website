@@ -16,7 +16,13 @@ h1, h2, h3 {
 }
 
 .h1 {
-    font-size: 5.375rem;
+    font-size: 3.3rem;
     line-height: 1;
     margin: 0;
+}
+
+@media screen and (min-width: $desktop) {
+    .h1 {
+        font-size: 5.375rem;
+    }
 }
