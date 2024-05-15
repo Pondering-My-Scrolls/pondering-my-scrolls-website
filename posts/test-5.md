@@ -1,7 +1,7 @@
 ---
 title: 'Post title goes here, what if it’s big ASF?'
 date: '1990-01-23'
-fancydate: '23rd day of January, 1645'
+
 author: 'Me'
 category: 'utter-trash'
 summary: 'Lorem ipsum summary go burrrr'
