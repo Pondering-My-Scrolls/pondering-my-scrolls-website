@@ -1,0 +1,24 @@
+@import '../../../assets/styles/1-variables.scss';
+
+.post__aside {
+
+    @media screen and (min-width: $desktop) {
+        margin-top: - 4rem;
+    }
+
+    time,
+    p {
+        font-family: $mono;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    time {
+        display: inline-block;
+        font-weight: bold;
+        margin-bottom: 3rem;
+    }
+}

@@ -24,6 +24,11 @@ h1, h2, h3 {
 .wysiwyg {
     max-width: 65ch;
 
+    > *:first-child {
+        margin: 0;
+        padding: 0;
+    }
+
     h1,
     h2,
     h3,
