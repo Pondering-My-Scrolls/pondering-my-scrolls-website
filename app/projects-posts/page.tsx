@@ -14,10 +14,12 @@ function Portfolio() {
 
   return (
       <main className="posts wo">
-          <PageHeader h1="Projects & Posts" />
-          <section className="posts__wrapper">
+          <h1 className="h1 pv">
+              Projects & Posts
+          </h1>
+          <div className="posts__wrapper">
               {postPreviews}
-          </section>
+          </div>
       </main>
   );
 };
