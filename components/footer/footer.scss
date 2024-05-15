@@ -1,10 +1,26 @@
+@import "../../assets/styles/1-variables";
+
 .footer {
-    margin: 1rem 0;
-    padding: 2rem 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    &:before {
+        content: '';
+        border-bottom: 1px solid $not-black;
+        width: calc(100% - #{$margin}px - #{$margin}px);
+        position: absolute;
+        top: 0;
+        left: #{$margin}px;
+    }
 }
 
 .footer__container {
     // if we ever want to have more than one item in the footer, we're prepared
     display: flex;
     justify-content: space-between;
+
+    p {
+        font-family: $mono;
+        font-size: 1rem;
+    }
 }
