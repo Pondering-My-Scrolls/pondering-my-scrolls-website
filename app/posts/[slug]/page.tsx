@@ -9,6 +9,13 @@ import Date from '../../../components/postDate';
 
 import './posts.scss';
 
+export async function generateMetadata({ params, searchParams }) {
+    return {
+        title: 'My title',
+        description: 'My description',
+    }
+}
+
 const getPostContent = (slug: string) => {
     const folder = "posts/";
     const file = `${folder}${slug}.md`;
