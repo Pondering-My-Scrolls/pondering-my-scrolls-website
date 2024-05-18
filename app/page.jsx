@@ -5,13 +5,13 @@ import PostPreview from "../components/latest-post/latestPost.js";
 
 export const metadata = {
     title: 'Home | Pondering My Scrolls',
-    description: '',
+    description: 'Gaze into the orbs with two web wizards who ponder the modern technology that surrounds them.',
 }
 
 function Home() {
     const postMetadata = getPostMetadata();
     const latestPost = postMetadata.map((post) => (
-      <PostPreview key={post.slug} {...post} />
+        <PostPreview key={post.slug} {...post} />
     ));
 
     return (
