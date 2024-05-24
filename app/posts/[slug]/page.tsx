@@ -5,6 +5,7 @@ import matter from "gray-matter";
 
 import getPostMetadata from '../../../components/getPostMetadata';
 import Date from '../../../components/postDate';
+import SummaryToggle from '../../../components/post-summary-toggle/summaryToggle';
 
 import './posts.scss';
 
@@ -17,6 +18,7 @@ const getPostContent = (slug: string) => {
 };
 
 const Post = (props: any) => {
+    // Post Content
     const slug = props.params.slug;
     const post = getPostContent(slug);
 
@@ -42,14 +44,7 @@ const Post = (props: any) => {
                 </aside>
 
                 <div className="post__summary col-4-10 m-col-2-9">
-                    <h2>
-                        <button id="summaryToggle">
-                            Read the summary +
-                        </button>
-                    </h2>
-                    <p id="summaryContent">
-                        {post.data.summary}
-                    </p>
+                    <SummaryToggle content={post.data.summary} />
                 </div>
 
                 <Markdown className="wysiwyg col-4-10 m-col-2-9">

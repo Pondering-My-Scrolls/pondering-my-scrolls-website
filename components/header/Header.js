@@ -61,7 +61,6 @@ function Header() {
                         id="siteNavToggle" 
                         aria-controls="siteNav" 
                         aria-expanded={`${!isOpen ? false : true}`}
-                        aria-label="Toggle Navigation"
                         onClick={siteNavToggleClick}
                         className="button"
                     >
