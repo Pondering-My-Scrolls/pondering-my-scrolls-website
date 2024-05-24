@@ -8,10 +8,15 @@
     &:before {
         content: '';
         border-bottom: 1px solid $not-black;
-        width: calc(100% - #{$margin}px - #{$margin}px);
         position: absolute;
         top: 0;
-        left: #{$margin}px;
+        left: 20px;
+        width: calc(100% - 20px - 20px);
+
+        @media screen and (min-width: $tablet) {
+            width: calc(100% - #{$margin}px - #{$margin}px);
+            left: #{$margin}px;
+        }
     }
 }
 
@@ -23,5 +28,9 @@
     p {
         font-family: $mono;
         font-size: 1rem;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 1.125rem;
+        }
     }
 }

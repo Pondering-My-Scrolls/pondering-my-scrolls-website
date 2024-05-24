@@ -7,15 +7,21 @@
     &:after {
         content: '';
         border-bottom: 1px solid $not-black;
-        width: calc(100% - #{$margin}px - #{$margin}px);
         position: absolute;
         bottom: 0;
-        left: #{$margin}px;
+        left: 20px;
+        width: calc(100% - 20px - 20px);
+
+        @media screen and (min-width: $mobile) {
+            width: calc(100% - #{$margin}px - #{$margin}px);
+            left: #{$margin}px;
+        }
     }
 }
 
 .header__logo a {
     svg {
+        width: clamp(17.5rem, 23vw, 22.438rem);
         transition: all .3s ease-in-out;
     }
 
@@ -30,6 +36,7 @@
 .header__nav {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
     gap: 4rem;
