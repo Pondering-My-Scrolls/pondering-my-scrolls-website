@@ -2,19 +2,11 @@ import React from 'react';
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
-import Link from "next/link";
 
 import getPostMetadata from '../../../components/getPostMetadata';
 import Date from '../../../components/postDate';
 
 import './posts.scss';
-
-export async function generateMetadata({ params, searchParams }) {
-    return {
-        title: 'My title',
-        description: 'My description',
-    }
-}
 
 const getPostContent = (slug: string) => {
     const folder = "posts/";
@@ -22,13 +14,6 @@ const getPostContent = (slug: string) => {
     const content = fs.readFileSync(file, "utf8");
     const matterResult = matter(content);
     return matterResult;
-};
-
-export const generateStaticParams = async () => {
-    const posts = getPostMetadata();
-    return posts.map((post) => ({
-        slug: post.slug,
-    }));
 };
 
 const Post = (props: any) => {
@@ -42,9 +27,6 @@ const Post = (props: any) => {
                     <h1 className="h1">
                         {post.data.title}
                     </h1>
-                    <p>
-                        Summary: {post.data.summary}
-                    </p>
                 </header>
 
                 <aside className="post__aside col-1-4 m-col-2-9">
@@ -52,12 +34,23 @@ const Post = (props: any) => {
                         <Date dateString={post.data.date} />
                     </p>
                     <p>
-                        Penned by <a rel="author" href="#">{post.data.author}</a>
+                        Penned by “{post.data.author}”
                     </p>
                     <p>
-                        Categorized as “<a href="#">{post.data.category}</a>”
+                        Categorized as “{post.data.category}”
                     </p>
                 </aside>
+
+                <div className="post__summary col-4-10 m-col-2-9">
+                    <h2>
+                        <button id="summaryToggle">
+                            Read the summary +
+                        </button>
+                    </h2>
+                    <p id="summaryContent">
+                        {post.data.summary}
+                    </p>
+                </div>
 
                 <Markdown className="wysiwyg col-4-10 m-col-2-9">
                     {post.content}
@@ -67,5 +60,12 @@ const Post = (props: any) => {
         </main>
     )
 }
+
+export const generateStaticParams = async () => {
+    const posts = getPostMetadata();
+    return posts.map((post) => ({
+        slug: post.slug,
+    }));
+};
 
 export default Post
