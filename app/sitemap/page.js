@@ -18,7 +18,7 @@ function Sitemap() {
     return (
         <main class="wo">
             <PageHeader h1="Sitemap" />
-            <div class="wysiwyg">
+            <div class="col-3-10 m-col-2-9 wysiwyg">
                 <h2>
                     Pages
                 </h2>

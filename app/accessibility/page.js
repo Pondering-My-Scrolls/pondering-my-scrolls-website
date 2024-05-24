@@ -10,7 +10,7 @@ function Accessibility() {
     return (
         <main className="wo">
             <PageHeader h1="Accessibility" />
-            <div className="wysiwyg">
+            <div className="col-3-10 m-col-2-9 wysiwyg">
                 <p>
                     This website has been created in a way in which it intends to comply wih WCAG version 2.2 Level AAA accessibility standards.
                 </p>
