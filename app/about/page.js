@@ -25,6 +25,9 @@ function About() {
                     </p>
                     <p>With a little bit of time and planning, the core concept of Pondering my Scrolls was formed over a shared plate of fries at a local diner.</p>
                 </div>
+                <div className="decorative col-3-10 m-col-3-8 s-col-1-5">
+                    <img class="decorative--blend-mode" src="../../assets/images/horizontal-border-medieval-woodcut.jpg" alt="Decorative medieval woodcut illustration of a skeleton lying down"></img>
+                </div>
                 <div className="wysiwyg col-3-10 m-col-3-8 s-col-1-5">
                     <h2>Jenica Woitowicz (she/her)</h2>
                     <p>When a high intelligence modifier is paired with hard work, you get Jenica Woitowicz!</p>
