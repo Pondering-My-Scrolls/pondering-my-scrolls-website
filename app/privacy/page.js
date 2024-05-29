@@ -14,6 +14,9 @@ function Privacy() {
                 <p>
                     This website does not collect any data in any way.
                 </p>
+                <p>
+                    You’re welcome! ;)
+                </p>
             </div>
         </main>
     )
