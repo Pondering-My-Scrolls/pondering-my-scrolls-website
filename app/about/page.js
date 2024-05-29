@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from "next/link";
-
+import Image from 'next/image'
+import pic from '../../assets/images/horizontal-border-medieval-woodcut.jpg'
 import PageHeader from '../../components/page-header/pageHeader.js';
 
 export const metadata = {
@@ -26,7 +27,11 @@ function About() {
                     <p>With a little bit of time and planning, the core concept of Pondering my Scrolls was formed over a shared plate of fries at a local diner.</p>
                 </div>
                 <div className="decorative col-3-10 m-col-3-8 s-col-1-5">
-                    <img class="decorative--blend-mode" src="../../assets/images/horizontal-border-medieval-woodcut.jpg" alt="Decorative medieval woodcut illustration of a skeleton lying down"></img>
+                    <Image
+                        src={pic}
+                        alt="Decorative medieval woodcut illustration of a skeleton lying down"
+                        class="decorative--blend-mode"
+                    />
                 </div>
                 <div className="wysiwyg col-3-10 m-col-3-8 s-col-1-5">
                     <h2>Jenica Woitowicz (she/her)</h2>
