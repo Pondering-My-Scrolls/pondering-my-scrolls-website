@@ -33,7 +33,7 @@ function About() {
                     <p>When a high intelligence modifier is paired with hard work, you get Jenica Woitowicz!</p>
                     <p>
                         Also a frontend developer, Jenica is someone who loves to keep up to date on digital subjects. That could be anything from
-                        cutting-edge accessibility to how wonky the next dog robot looksß.
+                        cutting-edge accessibility to how wonky the next dog robot looks wonky.
                     </p>
                     <p>
                         Jenica's strategy for making Pondering My Scrolls was to keep all the early planning notes in an ancient
