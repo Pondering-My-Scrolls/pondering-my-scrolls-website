@@ -1,10 +1,13 @@
 import React from 'react';
 
-import PageHeader from '../../components/page-header/pageHeader.js';
 import getPostMetadata from '../../components/getPostMetadata';
 import PostPreview from '../../components/post-preview/PostPreview.js';
 
 import './projects-posts.scss';
+
+export const metadata = {
+  title: 'Projects & Posts | Pondering My Scrolls',
+}
 
 function Portfolio() {
   const postMetadata = getPostMetadata();
