@@ -2,6 +2,7 @@ import React from 'react';
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
+import { Metadata, ResolvingMetadata } from 'next';
 
 import getPostMetadata from '../../../components/getPostMetadata';
 import Date from '../../../components/postDate';
@@ -16,6 +17,33 @@ const getPostContent = (slug: string) => {
     const matterResult = matter(content);
     return matterResult;
 };
+
+type Props = {
+    params: { slug: string }
+}
+
+export async function generateMetadata({ params }: Props,
+    parent: ResolvingMetadata
+  ): Promise<Metadata> {
+    // function to parse out specific text 
+    function betweenMarkers(text, begin, end) {
+        var firstChar = text.search(begin);
+        var lastChar = text.search(end);
+        var newText = text.substring(firstChar + 15, lastChar);
+        return newText;
+    }
+
+    // read route params
+    const slug = params.slug
+   
+    // fetch data
+    const postContent = await fetch(`http://localhost:3000/posts/${slug}`).then((res) => res.text());
+    let postTitle = betweenMarkers(postContent,'<h1 class="h1">',"</h1>");
+
+    return {
+      title: postTitle + " | Pondering My Scrolls",
+    }
+}
 
 const Post = (props: any) => {
     // Post Content
