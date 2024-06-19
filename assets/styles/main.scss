@@ -24,6 +24,29 @@
     }
 }
 
+.post__aside {
+
+    @media screen and (min-width: $desktop) {
+        margin-top: - 4rem;
+    }
+
+    time,
+    p {
+        font-family: $mono;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    time {
+        display: inline-block;
+        font-weight: bold;
+        margin-bottom: 3rem;
+    }
+}
+
 .footer__container {
     // if we ever want to have more than one item in the footer, we're prepared
     display: flex;
@@ -37,6 +60,13 @@
             font-size: 1.125rem;
         }
     }
+}
+
+.posts__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 4rem;
 }
 
 .header {
