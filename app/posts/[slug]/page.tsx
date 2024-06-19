@@ -37,8 +37,13 @@ export async function generateMetadata({ params }: Props,
     const slug = params.slug
    
     // fetch data
-    const postContent = await fetch(`http://localhost:3000/posts/${slug}`).then((res) => res.text());
+    let postContent = await fetch(`http://localhost:3000/posts/${slug}`).then((res) => res.text());
     let postTitle = betweenMarkers(postContent,'<h1 class="h1">',"</h1>");
+    if (postTitle != "") {
+        postTitle = postTitle;
+    } else {
+        postTitle = "";
+    }
 
     return {
       title: postTitle + " | Pondering My Scrolls",
