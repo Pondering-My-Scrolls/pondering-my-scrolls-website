@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props,
     }
 
     // read route params
-    const slug = params.slug
+    let slug = params.slug
    
     // fetch data
     let postContent = await fetch(`http://localhost:3000/posts/${slug}`).then((res) => res.text());
