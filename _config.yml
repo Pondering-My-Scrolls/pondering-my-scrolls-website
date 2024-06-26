@@ -60,8 +60,8 @@ defaults:
       layout: "default"  # put the default layout to all pages and posts in your site here
   -
     scope:
-      path: "projects"
       type: "posts" 
+      permalink: /:title
     values:
       layout: "post" # overrides the previous default layout, to use a 
       author: "Web Witches" # why not have a default author for the liquid variable post.author
