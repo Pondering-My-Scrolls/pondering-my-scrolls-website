@@ -51,3 +51,18 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"  # put the default layout to all pages and posts in your site here
+  -
+    scope:
+      path: "projects"
+      type: "posts" 
+    values:
+      layout: "post" # overrides the previous default layout, to use a 
+      author: "Web Witches" # why not have a default author for the liquid variable post.author
+      category: "Pondering"
