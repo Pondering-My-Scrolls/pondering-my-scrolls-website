@@ -7,18 +7,20 @@ title: Projects & Posts
     Projects & Posts
   </h1>
   <div class="posts__wrapper">
+    {% for post in site.posts %}
     <article class="post-preview">
       <h2>
-        <a href="">
-          Post title
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          {{ post.title }}
         </a>
       </h2>
+      <time datetime="{{ post.date }}">
+        {{ post.date | date: "%b %e / %y" }}
+      </time>
       <p>
-        Here be the date
-      </p>
-      <p>
-        Here be the summary
+        {{ post.summary | truncate: 180 }}
       </p>
     </article>
+    {% endfor %}
   </div>
 </main>
