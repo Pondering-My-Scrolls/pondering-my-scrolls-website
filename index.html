@@ -8,19 +8,21 @@ title: Home
             Two web witches ponder the modern technology that connects us.
         </h1>
         <div class="col-8-13">
+        {% for post in site.posts limit:1 %}
             <article class="latest-post">
                 <h2>
                     Our latest post
                 </h2>
                 <h3>
-                    <a href="">
-                        Latest post name here
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                        {{ post.title }}
                     </a>
                 </h3>
                 <p>
-                    This will be the summary!
+                    {{ post.summary | truncate: 180 }}
                 </p>
             </article>
+        {% endfor %}
         </div>
     </section>
 </main>
