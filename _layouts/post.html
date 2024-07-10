@@ -5,19 +5,19 @@
     <article class="wo">
         <header class="post__header col-4-10 m-col-2-9">
             <h1 class="h1">
-                Title here
+                {{ page.title }}
             </h1>
         </header>
 
         <aside class="post__aside col-1-4 m-col-2-9">
-            <p>
-                Here be the date.
+            <p class="post__date">
+                {{ page.date | date_to_string: "ordinal", "US" }}
             </p>
             <p>
-                Penned by “Author”
+                Penned by “{{ page.author }}”
             </p>
             <p>
-                Categorized as “Category”
+                Categorized as “{{ page.categories }}”
             </p>
         </aside>
 
@@ -28,7 +28,7 @@
                 </button>
             </h2>
             <p class="summary">
-                Summary content here
+                {{ page.summary }}
             </p>
         </div>
 

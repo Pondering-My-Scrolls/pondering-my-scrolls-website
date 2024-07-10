@@ -1,5 +1,6 @@
 ---
 layout: post
+author: moi
 title:  "Testing Content"
 date:   2024-06-18 20:13:31 -0500
 categories: utter-trash

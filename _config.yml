@@ -59,6 +59,5 @@ defaults:
       type: "posts" 
       permalink: /:title
     values:
-      layout: "post" # overrides the previous default layout, to use a 
-      author: "Web Witches" # why not have a default author for the liquid variable post.author
-      category: "Pondering"
+      layout: "post" # overrides the previous default layout
+      author: "Web Witches" # a default author for posts
