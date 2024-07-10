@@ -165,6 +165,8 @@
 }
 
 .header__logo a {
+    display: inline-block; 
+    
     svg {
         width: clamp(17.5rem, 23vw, 22.438rem);
         transition: all .3s ease-in-out;
