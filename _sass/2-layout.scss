@@ -51,10 +51,6 @@ img[class*="col-"] {
     align-items: start;
 }
 
-.s-hide {
-    display: none !important;
-}
-
 .wo,
 .wo-stacked {
     padding: 0 $margin-s + px;
@@ -75,6 +71,12 @@ img[class*="col-"] {
             grid-column-start: $a-s;
             grid-column-end: $b-s;
         }
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .s-hide {
+        display: none !important;
     }
 }
 
