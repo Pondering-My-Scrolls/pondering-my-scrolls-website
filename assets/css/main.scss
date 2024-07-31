@@ -161,6 +161,7 @@
 .header {
     padding-top: 2rem;
     padding-bottom: 2rem;
+    align-items: center;
 
     &:after {
         content: '';
@@ -177,18 +178,40 @@
     }
 }
 
-.header__logo a {
-    display: inline-block; 
-    
-    svg {
+.header__logo {
+    &__dt {
+        display: none;
         width: clamp(17.5rem, 23vw, 22.438rem);
-        transition: all .3s ease-in-out;
+        height: auto;
     }
 
-    &:hover,
-    &:focus {
+    &__mb {
+        width: 9rem;
+        height: auto;
+    }
+
+    @media screen and (min-width: $mobile) {
+        &__dt {
+            display: inline-block;
+        }
+
+        &__mb {
+            display: none;
+        }
+    }
+
+    a {
+        display: inline-block; 
+    
         svg {
-            transform: skew(-10deg);
+            transition: all .3s ease-in-out;
+        }
+    
+        &:hover,
+        &:focus {
+            svg {
+                transform: skew(-10deg);
+            }
         }
     }
 }
