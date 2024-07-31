@@ -13,6 +13,11 @@ html {
 body {
     background-color: $cream;
 
+    @media screen and (max-width: $mobile) {
+        margin: 0;
+        padding: 0;
+    }
+
     * {
         color: $black;
         line-height: 1.5;
@@ -61,4 +66,8 @@ body {
 
 .decorative--blend-mode{
     mix-blend-mode: multiply;
+}
+
+img {
+    max-width: 100%;
 }

@@ -15,7 +15,7 @@ h1, h2, h3 {
 }
 
 .h1--large {
-    font-size: clamp(4rem, 12vw, 7rem);
+    font-size: clamp(2rem, 12vw, 7rem);
     line-height: 1;
     margin: 0;
     margin-bottom: 4rem;
@@ -48,10 +48,18 @@ h1, h2, h3 {
 
     h2 {
         font-size: 2.8rem;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 2.2rem;
+        }
     }
 
     h3 {
         font-size: 2.4rem;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 2rem;
+        }
     }
 
     h4 {
