@@ -20,7 +20,7 @@
 
 title: Pondering my Scrolls
 baseurl: "/pondering-my-scrolls-website" # the subpath of your site, e.g. /blog
-url: "https://pondering-my-scrolls.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://pondering-my-scrolls.github.io/pondering-my-scrolls-website/" # the base hostname & protocol for your site, e.g. http://example.com
 permalink: :title
 
 # Build settings
