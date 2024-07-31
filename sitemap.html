@@ -16,31 +16,25 @@ between them
         </h2>
         <ul>
             <li>
-                <a href="/about">
+                <a href="{{ '/about' | relative_url }}">
                     About us
                 </a>
             </li>
             <li>
-                <a href="/accessibility">
+                <a href="{{ '/accessibility' | relative_url }}">
                     Accessibility
                 </a>
             </li>
             <li>
-                <a href="/">
+                <a href="{{ '/' | relative_url }}">
                     Home page
                 </a>
             </li>
             <li>
-                <a href="/projects-posts">
+                <a href="{{ '/projects-posts' | relative_url }}">
                     Projects & Posts
                 </a>
             </li>
-        </ul>
-        <h2>
-            Posts & Projects
-        </h2>
-        <ul>
-            <li>All posts should loop here</li>
         </ul>
     </div>
 </main>
