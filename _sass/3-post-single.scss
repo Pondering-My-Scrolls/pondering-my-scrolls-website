@@ -32,8 +32,10 @@
 }
 
 .post__aside {
+    margin-top: 4rem; 
+
     @media screen and (min-width: $desktop) {
-        margin-top: - 4rem;
+        margin-top: -5rem;
     }
 
     time,
