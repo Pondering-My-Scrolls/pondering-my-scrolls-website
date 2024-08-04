@@ -1,0 +1,8 @@
+@media (prefers-reduced-motion: reduce) {
+    .button,
+    .header .header__logo a svg,
+    .header .header__nav a,
+    #summaryToggle {
+        transition: 0s none;
+    }
+}

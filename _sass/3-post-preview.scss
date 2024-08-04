@@ -1,0 +1,80 @@
+.latest-post,
+.post-preview {
+    border: 1px solid $not-black;
+    border-radius: 2rem;
+    padding: 1.5rem 1.8rem 1.8rem 1.8rem;
+    max-width: 29rem;
+
+    a {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        border: 2px solid transparent;
+        border-radius: 1.18rem;
+        padding: 0.4rem 0.8rem;
+        margin-left: -0.7rem;
+
+        &:hover,
+        &:focus-visible {
+            border: 2px solid $black;
+            background-color: $black;
+            color: $cream;
+            text-decoration: none;
+        }
+
+        @media screen and (min-width: $desktop) {
+            font-size: 2.25rem;
+        }
+    }
+}
+
+.latest-post {
+
+    h2,
+    p {
+        margin-bottom: 0;
+    }
+
+    h2,
+    h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        display: inline-block;
+        font-family: $mono;
+        margin-bottom: 1rem;
+    }
+}
+
+.post-preview {
+    width: calc(50% - 5rem);
+
+    @media screen and (min-width: $desktop) {
+        width: calc(33% - 5rem);
+    }
+
+    @media screen and (max-width: $mobile) {
+        width: 100%;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    h2,
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    time {
+        display: inline-block;
+        font-family: $mono;
+        text-transform: uppercase;
+        margin-top: 0.8rem;
+        margin-bottom: 1.1rem;
+    }
+}

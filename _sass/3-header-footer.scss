@@ -1,0 +1,158 @@
+.header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-items: center;
+
+    &:after {
+        content: '';
+        border-bottom: 1px solid $not-black;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        width: calc(100% - 20px - 20px);
+
+        @media screen and (min-width: $mobile) {
+            width: calc(100% - #{$margin}px - #{$margin}px);
+            left: #{$margin}px;
+        }
+    }
+
+    .header__logo {
+        &__dt {
+            display: none;
+            width: clamp(17.5rem, 23vw, 22.438rem);
+            height: auto;
+        }
+
+        &__mb {
+            width: 9rem;
+            height: auto;
+        }
+
+        @media screen and (min-width: $mobile) {
+            &__dt {
+                display: inline-block;
+            }
+
+            &__mb {
+                display: none;
+            }
+        }
+
+        a {
+            display: inline-block;
+
+            svg {
+                transition: all .3s ease-in-out;
+            }
+
+            &:hover,
+            &:focus {
+                svg {
+                    transform: skew(-10deg);
+                }
+            }
+        }
+    }
+
+    .header__nav {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 4rem;
+        width: 100%;
+
+        a {
+            font-weight: 500;
+            font-size: 1.438rem;
+            text-underline-offset: 0.5rem;
+            transition: all .3s ease-in-out;
+
+            &:hover,
+            &:focus {
+                text-underline-offset: 0.8rem;
+                font-weight: 800;
+            }
+        }
+
+        .header__nav__modal {
+            display: none;
+            position: absolute;
+            z-index: 3;
+            background-color: $black;
+            font-size: 1.05rem;
+            padding: 1.2rem 2.3rem;
+            border-radius: 2rem;
+            top: 4rem;
+            right: 0;
+
+            &.open {
+                display: block;
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            li {
+                list-style: none;
+                margin: 1.1rem 0;
+            }
+
+            a {
+                color: $cream;
+                text-decoration: none;
+                font-weight: 500;
+
+                &:hover,
+                &:focus {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.page-header {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 4rem;
+
+    &:before {
+        content: '';
+        border-bottom: 1px solid $not-black;
+        position: absolute;
+        top: 0;
+        left: 20px;
+        width: calc(100% - 20px - 20px);
+
+        @media screen and (min-width: $tablet) {
+            width: calc(100% - #{$margin}px - #{$margin}px);
+            left: #{$margin}px;
+        }
+    }
+}
+
+
+.footer__container {
+    // if we ever want to have more than one item in the footer, we're prepared
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        font-family: $mono;
+        font-size: 1rem;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 1.125rem;
+        }
+    }
+}
