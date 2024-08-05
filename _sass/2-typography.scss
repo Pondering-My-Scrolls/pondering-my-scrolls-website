@@ -10,7 +10,9 @@
     }
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: $blackletter;
     letter-spacing: -0.025em;
     word-spacing: 0.08em;
@@ -32,7 +34,7 @@ h1, h2, h3 {
 .wysiwyg {
     max-width: 65ch;
 
-    > *:first-child {
+    >*:first-child {
         margin: 0;
         padding: 0;
     }
@@ -93,6 +95,13 @@ h1, h2, h3 {
     img {
         margin: 2rem 0;
         max-width: 100%;
+    }
+}
+
+main,
+footer {
+    a:hover {
+        text-decoration-thickness: 2px;
     }
 }
 
