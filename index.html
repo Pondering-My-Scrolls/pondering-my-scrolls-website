@@ -9,7 +9,7 @@ meta-description: Two web witches ponder the modern technology that connects us.
             Two web witches ponder the modern technology that connects us.
         </h1>
         <div class="col-8-13">
-        {% for post in site.posts limit:1 %}
+            {% for post in site.posts limit:1 %}
             <article class="latest-post">
                 <h2>
                     Our latest post
@@ -23,7 +23,7 @@ meta-description: Two web witches ponder the modern technology that connects us.
                     {{ post.summary | truncate: 180 }}
                 </p>
             </article>
-        {% endfor %}
+            {% endfor %}
         </div>
     </div>
 </main>
