@@ -8,7 +8,7 @@
             </h1>
         </header>
 
-        <aside class="post__aside col-1-4 m-col-2-9">
+        <div class="post__aside col-1-4 m-col-2-9">
             <p class="post__date">
                 {{ page.date | date_to_string: "ordinal", "US" }}
             </p>
@@ -18,14 +18,12 @@
             <p>
                 Categorized as “{{ page.categories }}”
             </p>
-        </aside>
+        </div>
 
         <div class="post__summary col-4-10 m-col-2-9">
-            <h2>
-                <button id="summaryToggle" aria-expanded="false">
-                    Read the summary +
-                </button>
-            </h2>
+            <button id="summaryToggle" aria-expanded="false">
+                Read the summary +
+            </button>
             <p class="summary">
                 {{ page.summary }}
             </p>
