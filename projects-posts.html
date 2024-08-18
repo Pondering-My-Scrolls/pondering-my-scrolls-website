@@ -19,7 +19,7 @@ meta-description: The main post archive for Pondering my Scrolls web content.
                 {{ post.date | date: "%B %e, %Y" }}
             </time>
             <p>
-                {{ post.summary | truncate: 180 }}
+                {{ post.meta-description | truncate: 180 }}
             </p>
         </article>
         {% endfor %}
