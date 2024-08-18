@@ -20,14 +20,14 @@
             </p>
         </div>
 
-        <div class="post__summary col-4-10 m-col-2-9">
+        <section aria-labelledby="summaryToggle" class="post__summary col-4-10 m-col-2-9">
             <button id="summaryToggle" aria-expanded="false">
-                Read the summary +
+                Read the simplified version
             </button>
             <div class="summary wysiwyg">
                 {{ page.summary }}
             </div>
-        </div>
+        </section>
 
         <div class="wysiwyg col-4-10 m-col-2-9">
             {{ content }}
