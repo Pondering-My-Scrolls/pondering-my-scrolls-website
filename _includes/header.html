@@ -14,7 +14,11 @@
         <script src="{{ '/assets/js/global.js' | relative_url }}"></script>
 
         <title>{{ page.title }}{{ post.title }} | Pondering My Scrolls</title>
-        <meta name="description" content="{{ page.meta-description }}">
+        <meta name="description" content="{{ page.meta-description }}{{ post.meta-description }}">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Space+Grotesk:wght@300..700&family=Space+Mono&display=swap" rel="stylesheet">
     </head>
 
     <body>
