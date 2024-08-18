@@ -105,6 +105,13 @@ footer {
     }
 }
 
+code {
+    background-color: white;
+    border-radius: 0.25rem;
+    padding: 0 0.25rem;
+    font-family: $mono;
+}
+
 @media screen and (min-width: $desktop) {
     .h1 {
         font-size: 5.375rem;
