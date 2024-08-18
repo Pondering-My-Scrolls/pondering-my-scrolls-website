@@ -79,6 +79,11 @@ h3 {
         text-transform: uppercase;
     }
 
+    a {
+        text-underline-offset: 0.25rem;
+        text-decoration-color: $not-black;
+    }
+
     li,
     p {
         margin: 0.8rem 0;
