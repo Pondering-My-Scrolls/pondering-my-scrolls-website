@@ -79,6 +79,11 @@ h3 {
         text-transform: uppercase;
     }
 
+    a {
+        text-underline-offset: 0.25rem;
+        text-decoration-color: $not-black;
+    }
+
     li,
     p {
         margin: 0.8rem 0;
@@ -103,6 +108,13 @@ footer {
     a:hover {
         text-decoration-thickness: 2px;
     }
+}
+
+code {
+    background-color: white;
+    border-radius: 0.25rem;
+    padding: 0 0.25rem;
+    font-family: $mono;
 }
 
 @media screen and (min-width: $desktop) {

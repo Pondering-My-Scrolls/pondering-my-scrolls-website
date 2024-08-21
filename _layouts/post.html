@@ -20,18 +20,21 @@
             </p>
         </div>
 
-        <div class="post__summary col-4-10 m-col-2-9">
+        <section aria-labelledby="summaryToggle" class="post__summary col-4-10 m-col-2-9">
             <button id="summaryToggle" aria-expanded="false">
-                Read the summary +
+                Read the simplified article
             </button>
-            <p class="summary">
+            <div class="summary wysiwyg">
+                <h2>
+                    Simplified Version
+                </h2>
                 {{ page.summary }}
-            </p>
-        </div>
+            </div>
+        </section>
 
-        <div class="wysiwyg col-4-10 m-col-2-9">
+        <section aria-label="Read the full article." class="wysiwyg col-4-10 m-col-2-9">
             {{ content }}
-        </div>
+        </section>
 
     </article>
 </main>
