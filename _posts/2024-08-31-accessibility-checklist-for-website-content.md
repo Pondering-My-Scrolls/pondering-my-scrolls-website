@@ -4,7 +4,7 @@ author: 'Nicky'
 title: 'Accessibility Checklist for Website Content'
 date: '2024-09-03'
 categories: 'Resource'
-summary: '<h3>Introduction and background</h3><p>This website had a goal of meeting as many WCAG AAA criteria as possible. That means we have to check all content before we post it. So, we made a checklist to help with this.<p>We want to share our process for making blog post content accessible. As accessible as we know how to, anyway.<h3>Intention</h3><p>This checklist should not be used by itself as an accessibility plan. It can be used to build your own web accessibility plan.<p>Another reason this checklist is published, is to be clear. We want to explain how we approach one part of web accessibility.<h3>Feedback</h3><p>If you want to share feedback, please email me at hello@nicky.dev.<h3>Checklist</h3><p>The original article’s checklist has been written to be as simple as possible. Some really specific words must be used and cannot be changed.</p><p><a href="#the-checklist">Read the checklist</a>.</p>'
+summary: '<h3>Introduction and background</h3><p>This website had a goal of meeting as many WCAG AAA criteria as possible. That means we have to check all content before we post. We made a checklist to help us know what to check each time.<p>We want to share our process for making blog post content accessible. As accessible as we know how to, anyway.<h3>Intention</h3><p>This checklist should not be used by itself as an accessibility plan. It can be used to build your own web accessibility plan.<p>Another reason this checklist is published, is to be clear. We want to explain how we approach one part of web accessibility.<h3>Feedback</h3><p>If you want to share feedback, please email me at hello@nicky.dev.<h3>Checklist</h3><p>The original article’s checklist has been written to be as simple as possible. Some really specific words must be used and cannot be changed.</p><p><a href="#the-checklist">Read the checklist</a>.</p>'
 meta-description: 'This accessible content checklist can be used as a starting point to build your own web accessibility plan and meet the goals you set.'
 ---
 
@@ -29,9 +29,9 @@ The list is structured in what we think is the most logical order to complete.
 
 ### Design & Structure
 
-- **Do not use colour** as a lone source of information.
-- **New colours must pass** the appropriate contrast ratio thresholds.
-- **Headings** need to be placed quite frequently where it makes sense. They should be brief, and describe the topic or purpose.
+- **Do not use colour** alone as information.
+- **New colours must pass** contrast ratio thresholds.
+- **Headings** need to be placed often where they makes sense. They should be brief, and describe the topic or purpose.
 
 ### Links
 
@@ -42,12 +42,12 @@ The list is structured in what we think is the most logical order to complete.
 ### Language
 
 - **Language changes** need to be marked up with the correct BCP 47 language tag.
-- **Abbreviations and acronyms** must be spelled out in full on their first use.
+- **Abbreviations and acronyms** must be spelled out on their first use.
 - **Ambiguous words** should be marked up to provide their pronunciation, or, there should be context for the meaning to be distinguished.
 
 #### Reading Level
 
-Anything more complex than “Grade 9” reading level must have a simplified version, or supplemental content. Please remove any proper names and titles when testing. 
+Anything more complex than “Grade 9” reading level must have a simple version, or alternative content. Please remove any proper names and titles when testing. 
 
 Some decisions require careful consideration of context and nuances, including:
 
