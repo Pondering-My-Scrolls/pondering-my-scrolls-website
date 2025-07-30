@@ -1,0 +1,44 @@
+/* 
+Target common generic sections on nearly every website, so that we can override their CSS. 
+This code adds a green background and less contrast to commonly used HTML elements.
+This may make some parts of some websites difficult to read, but lessening contrast is the
+point here so that migraine sufferers can get some relief.
+There is evidence to support green light being beneficial to migraine sufferers.
+*/
+body {
+    background-color: green !important;
+    filter: contrast(50%);
+}
+body header {
+    background-color: green !important;
+}
+body main {
+    background-color: green !important;
+}
+body footer {
+    background-color: green !important;
+}
+
+/* 
+Add a CSS "overlay" to the body with a before element. 
+The semi-opaque green "overlay" is placed on top of the page content using 
+position fixed and it spans the entire browser window.
+*/
+body::before {
+  content: ""; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 255, 0, 0.3); 
+  pointer-events: none; /* clicks still need to pass through to page content */
+  z-index: 1000000;
+}
+
+
+
+/* 
+Feel free to edit this code as you wish! And, if you improve it please 
+let me know! - Jenica Woitowicz
+*/
